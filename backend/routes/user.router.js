@@ -5,7 +5,7 @@ const auth=require("../middleware/auth")
 let userRouter=express.Router()
 userRouter.use(express.json())
 
-userRouter.post('/signin',auth,signIn)
+userRouter.post('/signin',signIn)
 userRouter.post('/signup',signUp)
 
 module.exports=userRouter
